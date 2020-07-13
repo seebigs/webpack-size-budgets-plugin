@@ -1,0 +1,25 @@
+{
+  "name": "webpack-size-budgets-plugin",
+  "version": "0.1.0",
+  "description": "Warn or error when bundle assets exceed thresholds in size, percentChange, installed node_modules, etc.",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/seebigs/webpack-size-budgets-plugin.git"
+  },
+  "author": "Chris Bigelow <seebigswork@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/seebigs/webpack-size-budgets-plugin/issues"
+  },
+  "dependencies": {
+    "bytes": "^3.1.0",
+    "console-table-printer": "^1.10.2",
+    "get-prop-safe": "^1.0.0",
+    "minimatch": "^3.0.4",
+    "seebigs-each": "^1.1.0"
+  }
+}
