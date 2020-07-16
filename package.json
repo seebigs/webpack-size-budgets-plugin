@@ -1,6 +1,6 @@
 {
   "name": "webpack-size-budgets-plugin",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Warn or error when bundle assets exceed thresholds in size, percentChange, installed node_modules, etc.",
   "main": "index.js",
   "scripts": {
