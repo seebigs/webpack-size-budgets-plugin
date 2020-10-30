@@ -51,11 +51,12 @@ function pluginHandler(pluginName, config) {
                         if (mod.modules && mod.modules.length) {
                             walkModules(mod.modules);
                         } else {
-                            if (mod.name.indexOf('(webpack)') === 0) {
+                            const modName = mod.name || '';
+                            if (modName.indexOf('(webpack)') === 0) {
                                 // what to do with these modules?
-                            } else if (mod.name.indexOf('./node_modules/') === 0) {
+                            } else if (modName.indexOf('./node_modules/') === 0) {
                                 nodeModulesSize += mod.size;
-                                nodeModulesList[mod.name] = mod.size;
+                                nodeModulesList[modName] = mod.size;
                             } else {
                                 sourceSize += mod.size;
                             }
